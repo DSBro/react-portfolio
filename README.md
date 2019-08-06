@@ -1,2 +1,3 @@
-# react-portfolio
-This is my professional portfolio
+# Trevor McReynold's Portfolio
+
+This is my professional portfolio. It uses AWS and ReactJS.
