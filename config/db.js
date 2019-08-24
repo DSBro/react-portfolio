@@ -2,6 +2,8 @@ const mongoose = require('mongoose');
 const config = require('config');
 const db = config.get('mongoURI');
 
+mongoose.set('useFindAndModify', false);
+
 // Catch errors before they crash app
 const connectDB = async () => {
   try {
