@@ -14,6 +14,7 @@ module.exports = function(req, res, next) {
   try {
     const decoded = jwt.verify(token, config.get('jwtSecret'));
     // User ID is included in the jwt payload
+    // decoded.user will pull ID for correct user
     req.user = decoded.user;
     /*
     "If the current middleware function does not end the request-response cycle, it must call next() to pass control to the next middleware function. Otherwise, the request will be left hanging."
